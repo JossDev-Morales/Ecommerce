@@ -1,0 +1,485 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+}
+i{
+    display: inline-flex;
+    margin-left: 1vh;
+}
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #8D8D8D #FFFFFF;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #FFFFFF;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: #CDCDCD;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: #A1A1A1;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #8D8D8D;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #CDB029;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #FFDA33;
+  }
+  
+.subnav{
+    display: inline-flex;
+    position: absolute;
+    width: 17%;
+    height: 87%;
+    bottom: 0%;
+    left: 0%;
+    box-shadow: rgba(0, 0, 0, 0.20) 5px 10px 15px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.mapOrder{
+    display: inline-flex;
+    position: relative;
+    width: 90%;
+    height: 20%;
+    background-color:rgb(255, 218, 51);
+    border-radius: .8vh;
+    justify-content: center;
+    align-content: space-between;
+    transition: all .2s ease-in-out;
+}
+.mapOrder:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.mapOrder h1{
+    display: inline-flex;
+    font-size: 1.2rem;
+    font-family:Tahoma;
+    color: white;
+    background-color:rgba(255, 102, 0, 0.76);
+    width: 90%;
+    height:fit-content;
+    min-height: 20%;
+    max-height: 45%;
+    border-radius: .5vh;
+    margin: 1vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.mapOrder h1 img{
+    display: block;
+    width: 3.5vh;
+}
+.mapOrder span{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    left: 25%;
+    bottom: 10%;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family:Tahoma;
+    font-weight: 550;
+    color: rgb(253, 253, 253);
+}
+.noItemsP{
+    display: inline-flex;
+    position: relative;
+    width: 50%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vh;
+    font-size: 4rem;
+    font-weight: 200;
+    color: white;
+}
+.container{
+    display: inline-flex;
+    position: absolute;
+    width: 81%;
+    height: 87%;
+    justify-content: center;
+    align-items: center;
+    bottom:0%;
+    right: 0%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+.anOrder{
+    display: none;
+    position: relative;
+    margin: 4.4vh;
+    width: 99%;
+    height: 89%;
+    background-color:rgb(255, 218, 51);
+    border-radius: 1vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px;
+}
+.TOfOrder{
+    display: inline-flex;
+    position: absolute;
+    width: 80%;
+    height: 10%;
+    background-color:rgba(255, 102, 0, 0.76);
+    border-radius: .5vh;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+    top: 3%;
+    font-size: 1.5rem;
+    font-family:Tahoma;
+    color: white;
+}
+.nameElement{
+    display: inline-flex;
+    position: absolute;
+    width: 59%;
+    height: 8%;
+    background-color: #FFDA33;
+    border-radius: .5vh;
+    justify-content: center;
+    align-items: center;
+    left: 10%;
+    top: 15%;
+    font-size: 1.5rem;
+    font-family:Tahoma;
+    color: white;
+}
+.nameElement:hover{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.NumOrder{
+    display: flex;
+    position: absolute;
+    width: 19%;
+    height: 8%;
+    background-color:  rgb(44, 44, 44);
+    border-radius: .5vh;
+    justify-content: center;
+    align-items: center;
+    right: 10%;
+    top: 15%;
+    font-size: 1.5rem;
+    font-family:Tahoma;
+    color: white;
+    font-weight: 600;
+}
+.NumOrder:hover{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.UlProducts{
+    display: inline-flex;
+    position: absolute;
+    width: 40%;
+    height: 60%;
+    border-radius: .5vh;
+    left: 5%;
+    bottom: 12%;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    font-family:Tahoma;
+    color: white;
+}
+.ProductsT{
+    display: inline-flex;
+    position: relative;
+    width: 95%;
+    height: 10%;
+    background-color: #FFDA33;
+    justify-content: center;
+    align-items: center;
+    margin: 1vh;
+    font-size: 1.3rem;
+    border-radius: .5vh;
+}
+.LiProducts{
+    display: inline-flex;
+    position: relative;
+    width: 85%;
+    height: 10%;
+    background-color: #FFDA33;
+    margin: 1vh;
+    border-radius: .5vh;
+    justify-content:flex-start;
+    align-items: center;
+    list-style-image: none;
+}
+.IconProduct{
+    margin: 1vh;
+    color: rgb(0, 0, 0);
+}
+.DelateLIP{
+    display: inline-flex;
+    position: absolute;
+    width: 9%;
+    height: 70%;
+    border-radius: .5vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 31, 5);
+    right: 3%;
+    font-size: 1rem;
+    font-family: Tahoma;
+    font-weight: 600;
+}
+.DelateLIP:hover{box-shadow: rgba(0, 0, 0, 0.58) 0px 2px 5px;}
+
+.PriceElement{
+    display: inline-flex;
+    position: absolute;
+    width: 40%;
+    height: 8%;
+    border-radius: .5vh;
+    background-color:rgba(255, 102, 0, 0.76) ;
+    left: 5%;
+    bottom: 3%;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family:Tahoma;
+    color: white;
+}
+.BuyElement{
+    display: inline-flex;
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    border-radius:.5vh;
+    left: 48%;
+    bottom: 3%;
+    background-color: rgb(0, 243, 81);
+    justify-content:center;
+    align-items:center;
+    font-size: 1.2rem;
+    font-family:Tahoma;
+    color: white;
+}
+.DelateElement{
+    display: inline-flex;
+    position: absolute;
+    width: 15%;
+    height: 8%;
+    border-radius: .5vh;
+    right: 5%;
+    bottom: 3%;
+    background-color: rgb(255, 35, 28);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family:Tahoma;
+    color: white;
+}
+/*float*/
+.floatNewO{
+    display: none;
+    position: absolute;
+    width: 92%;
+    height: 86%;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+    left: 4%;
+    bottom: 0%;
+    border-radius: 1vw;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.floatNewO:hover{box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;}
+.close{
+    display: inline-flex;
+    position: absolute;
+    width: 2%;
+    height: 4%;
+    top: 2%;
+    right: 1%;
+    border-radius: .5vw;
+    background-color: rgba(22, 22, 22, 0.603);
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.close:hover{
+    background-color: rgb(39, 39, 39);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.close:active{
+    width: 2.2%;
+    height: 4.5%;
+    top: 1.8%;
+    right: .9%;
+    background-color:rgb(255, 218, 51);
+}
+.floatNewO h1{
+    display: inline-flex;
+    position: relative;
+    width: 80%;
+    height: 10%;
+    background-color:rgb(255, 218, 51);
+    border-radius: 1vw;
+    font-size: 1.4rem;
+    font-family:Tahoma;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    top: 5%;
+}
+.continputsFO{
+    display: inline-flex;
+    position: relative;
+    width: 80%;
+    height: 12%;
+    background-color:rgb(255, 218, 51);
+    border-radius: 1vw;
+}
+.continputsFO:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.labelFO{
+    display: inline-flex;
+    position: relative;
+    width: 30%;
+    height: 100%;
+    border-top-left-radius: 1vw;
+    border-bottom-left-radius: 1vw;
+    background-color: rgb(255, 218, 51);
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family:Tahoma;
+    font-weight: 550;
+    color: rgb(255, 255, 255);
+}
+.inputFO{
+    display: inline-flex;
+    position: relative;
+    width: 70%;
+    height: 100%;
+    border-radius: 0%;
+    border-bottom-right-radius: 1vw;
+    border-top-right-radius: 1vw;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    padding-left: 5%;
+
+}
+.clsinput{
+    display: inline-flex;
+    position: absolute;
+    width: 2.5%;
+    height: 30%;
+    background-color: rgb(255, 255, 255);
+    right: 1%;
+    top: 37%;
+    border-radius: 13vw;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: Tahoma;
+    
+    justify-content: center;
+    align-items: center;
+    padding-bottom: .4%;
+}
+.clsinput:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.conterbtnFO{
+    display: inline-flex;
+    position: relative;
+    width: 70%;
+    height: 15%;
+    justify-content: center;
+    align-items: center;
+}
+.addOrder{
+    display: inline-flex;
+    position: relative;
+    width: 25%;
+    height: 80%;
+    margin: 2%;
+    background-color:rgb(1, 247, 112);
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Tahoma ;
+}
+.CancelOrder{
+    display: inline-flex;
+    position: relative;
+    width: 15%;
+    height: 80%;
+    margin: 2%;
+    background-color: rgb(230, 31, 5);
+    justify-content: center;
+    align-items: center;
+    border-radius: 1vw;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: Tahoma ;
+}
+.CancelOrder:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.CancelOrder:active{
+    background-color:rgb(255, 218, 51);
+}
+.addOrder:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.addOrder:active{
+    background-color:rgb(255, 218, 51);
+}
+.succes{
+    display: inline-flex;
+    position: absolute;
+    width: 12%;
+    height: 5%;
+    background-color: rgb(3, 233, 99);
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+    border-radius: .5vw;
+    left: 45%;
+    top: -5%;
+    
+}
+.scsActive{
+    animation: succes 1s ease .5s;
+}
+@keyframes succes {
+    0%{top: -5%;}
+    100%{top: 0.4%;}
+}
+.focusIF{display: inline-flex;}

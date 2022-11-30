@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ichurros</title>
+    <link rel="shortcut icon" href="/sources/png/024-churros-1.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo-a"><div class="logo"><img src="/sources/png/024-churros-1.png " alt="Logo"><p>Churro's Store</p></div></a>
+        <label class="bar-search" for="search"><input id="search" type="search" placeholder="search"><div><img src="/sources/png/buscar.png" alt=""></div></label>
+        <a href="/docs/WishList.html"><div class="deseos"><img src="/sources/png/008-lista-de-deseos.png" alt="Lista de deseos"></div></a>
+        <a href="/docs/OrderNpay.html"><div class="carrito"><img src="/sources/png/006-anadir-al-carrito.png" alt="Carrito de compras"></div></a>       
+    </nav>
+    <div class="succes"><p>Succes</p></div>
+    <div class="cont-btn">
+        <div class="btn Bchurros"><p>Churros</p></div>
+        <div class="btn Baderesos"><p>Aderesos</p></div>
+        <div class="btn Bcomplementos"><p>Complementos</p></div>
+    </div>
+    <div class="neworder"><p>Nueva Orden</p></div>
+    <div class="floatNewO">
+        <h1>Nueva Orden</h1>
+        <div class="continputsFO">
+            <label class="labelFO"for="name"><p>Titulo:</p></label>
+            <input id="name" class="inputFO" type="text" placeholder="Tu orden">
+            <div class="clsinput clsName">x</div>
+        </div>
+        <div class="continputsFO">
+            <label class="labelFO"for="para"><p>A nombre de:</p></label>
+            <input id="para" class="inputFO" type="text"placeholder="Tu nombre">
+            <div class="clsinput clsPara">x</div>
+        </div>
+        
+        <div class="conterbtnFO">
+            <div class="addOrder">Guardar</div>
+            <div class="CancelOrder">Cancelar</div>
+        </div>
+    </div>
+    <div class="feed Fchurros focusIF"></div>
+    <div class="feed Faderesos"></div>
+    <div class="feed Fcomplementos"></div>
+    <!-- scripts -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/OrderNpay.css">
+    <title>My Order</title>
+</head>
+<body>
+    <nav>
+        <a href="/index.html" class="logo-a"><div class="logo"><img src="/sources/png/024-churros-1.png" alt="Logo"><p>Churro's Store</p></div></a>
+        <label class="bar-search" for="search"><input id="search" type="search" placeholder="search"><div><img src="/sources/png/buscar.png" alt=""></div></label>
+        <a href="/docs/WishList.html"><div class="deseos"><img src="/sources/png/008-lista-de-deseos.png" alt="Lista de deseos"></div></a>
+        <a href="/docs/OrderNpay.html"><div class="carrito"><img src="/sources/png/006-anadir-al-carrito.png" alt="Carrito de compras"></div></a>       
+    </nav>
+    <div class="succes"><p>Succes</p></div>
+    <subnav class="subnav preview"></subnav>
+
+    <div class="container"></div>
+    <div class="floatNewO">
+        <h1>Nueva Orden</h1>
+        <div class="continputsFO">
+            <label class="labelFO"for="name"><p>Titulo:</p></label>
+            <input id="name" class="inputFO" type="text" placeholder="Tu orden">
+            <div class="clsinput clsName">x</div>
+        </div>
+        <div class="continputsFO">
+            <label class="labelFO"for="para"><p>A nombre de:</p></label>
+            <input id="para" class="inputFO" type="text"placeholder="Tu nombre">
+            <div class="clsinput clsPara">x</div>
+        </div>
+        
+        <div class="conterbtnFO">
+            <div class="addOrder">Guardar</div>
+            <div class="CancelOrder">Cancelar</div>
+        </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://kit.fontawesome.com/81ea973cf5.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="/scripts/orderNpay.js"></script>
+</body>
+</html>
